@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+/* ---------------------- header Stylation ---------------------- */
+
+header { /* div taken 5% form all width , 100% - 5% = 95% form div width  */
+    background-color: white;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    max-height: 100px;
+    padding-bottom: 10px;
+}
+
+header div , header nav{
+    width: fit-content;
+    margin: auto;
+}
+
+header div h1 {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+header nav a {
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Style for Header and Footer Section*/
+header nav a:hover , footer h4 a:hover {
+    cursor: grabbing; 
+    text-decoration: overline;
+}
+
+/* ---------------------- Information Section Stylation ---------------------- */
+
+.info {
+    min-height: 400px;
+    background: url('coder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.info .text-info {
+    width: fit-content;
+    margin: 30px 0 0 30px;
+}
+
+.info .text-info h1 {
+    margin-bottom: 3px;
+}
+
+.info .text-info p {
+    margin-left: 10px;
+}
+
+/* ---------------------- Skils and Contact Section Stylation ---------------------- */
+
+/*.skils {
+    background-color: blue;
+}*/
+
+.skils .NameCon , .contact .NameCon {
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.skils .NameCon h1 , .contact .NameCon h1{
+    width: fit-content;
+    margin: auto;
+}
+
+.skils .sk-div , .contact .con-div {
+    color: white;
+    width: fit-content; /* ds and tabs style*/
+    margin: auto;
+}
+
+.skils .sk-div div , .contact .con-div div {
+    display: inline-block;
+    margin: 50px;
+    width: fit-content;
+    background-color: blue;
+    padding: 10px;
+}
+
+.contact .con-div div {
+    background-color: white;
+    color: black;
+}
+
+.contact .con-div div h4 , .contact .con-div div p {
+    width: fit-content;
+    margin: auto;
+}
+
+.contact .con-div div h4 {
+    margin-bottom: 4px;
+}
+
+.skils .sk-div div:nth-child(1) {
+    background-color: orangered;
+}
+
+.skils .sk-div div:nth-child(2) {
+    background-color: blue;
+}
+
+.skils .sk-div div:nth-child(3) {
+    background-color: yellow;
+    color: black;
+}
+
+/* ---------------------- footer Stylation ---------------------- */
+
+hr {
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+/* ---------------------- Multi-Platforms Stylation ---------------------- */
+
+@media (max-width: 472px) { /* 472 Mobiles Style*/
+
+    header div h1 {
+        font-size: small;
+        padding-bottom: 2px;
+        
+    }
+
+    header nav a {
+        font-size: smaller;
+        margin-right: 5px;
+    }
+
+
+    .info {
+        min-height: 428px;
+    }
+
+    .info .text-info {
+        width: fit-content;
+        margin: 30px 0 0 10px;
+    }
+
+    .info .text-info h1 {
+        font-size: medium;
+    }
+
+    .info .text-info p {
+        font-size: smaller;
+    }
+
+    .skils .sk-div {
+        color: white;
+        width: fit-content;
+    }
+
+    .skils .sk-div div {
+        display: block;
+        margin: 10px auto;
+        width: 220px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 472px) and (max-width: 763px){  /* form 472 to 763 Tables Style*/
+
+    header div h1 {
+        font-size: larger;
+    }
+
+    header nav a {
+        font-size: small;
+    }
+
+    .info {
+        min-height: 419px;
+    }
+
+    .info .text-info h1 {
+        font-size: large;
+    }
+
+    .info .text-info p {
+        font-size: smaller;
+    }
+    
+    .skils .sk-div {
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .skils .sk-div div {
+        display: inline-block;
+        margin: 50px 0;
+        margin-left: 10px;
+        background-color: blue;
+        padding: 15px;
+    }
+}
